@@ -14,6 +14,7 @@
 			in {
 				devShells.default = pkgs.mkShell {
 					packages = [
+						pkgs.pyright
 						pkgs.uv
 					];
 

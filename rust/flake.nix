@@ -27,6 +27,7 @@
 					"rust-src"
 					"rustc"
 					"rustfmt"
+					"rust-analyzer"
 				];
 
 				# Optional: make `nix build` work nicely for Rust projects
@@ -48,7 +49,6 @@
 				devShells.default = pkgs.mkShell {
 					packages = [
 						toolchain
-						fenix.packages.${system}.rust-analyzer
 					];
 
 					# Helps rust-analyzer find std sources
