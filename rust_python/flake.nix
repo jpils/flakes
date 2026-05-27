@@ -27,7 +27,6 @@
 					"rustc"
 					"rustfmt"
 					"rust-analyzer"
-					"rust-analyzer"
 				];
 
 				craneLib = (crane.mkLib pkgs).overrideToolchain toolchain;
