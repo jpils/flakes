@@ -27,6 +27,7 @@
 					"rustc"
 					"rustfmt"
 					"rust-analyzer"
+					"rust-analyzer"
 				];
 
 				craneLib = (crane.mkLib pkgs).overrideToolchain toolchain;
@@ -43,9 +44,9 @@
 				devShells.default = pkgs.mkShell {
 					packages = [
 						toolchain
-						fenix.packages.${system}.rust-analyzer
 						pkgs.bacon
 
+						pkgs.pyright
 						pkgs.uv
 					];
 
